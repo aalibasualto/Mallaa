@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Industrial</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Interactiva Ingeniería Industrial</h1>
+
+  <div class="semestre" id="semestre1">
+    <h2>Primer Semestre</h2>
+    <div class="ramo" id="calculo1" data-desbloquea="calculo2">Cálculo I</div>
+    <div class="ramo" id="algebra1" data-desbloquea="algebra2">Álgebra I</div>
+    <div class="ramo" id="fisica1" data-desbloquea="fisica2">Física I</div>
+    <div class="ramo" id="introDiseno" data-desbloquea="fundProgIng">Intro Diseño Ing.</div>
+    <div class="ramo" id="introIng">Intro a la Ing. Industrial</div>
+  </div>
+
+  <div class="semestre" id="semestre2">
+    <h2>Segundo Semestre</h2>
+    <div class="ramo bloqueado" id="calculo2" data-desbloquea="calculo3">Cálculo II</div>
+    <div class="ramo bloqueado" id="algebra2" data-desbloquea="edo,io">Álgebra II</div>
+    <div class="ramo bloqueado" id="fisica2" data-desbloquea="fisicaModerna">Física II</div>
+    <div class="ramo bloqueado" id="fundProgIng" data-desbloquea="programacion">Fund. Prog. Ing.</div>
+    <div class="ramo" id="quimica" data-desbloquea="ingSistemas,procIndustriales">Química y Termodinámica</div>
+  </div>
+
+  <!-- Agrega aquí los demás semestres de forma similar... -->
+
+  <script src="script.js"></script>
+</body>
+</html>
